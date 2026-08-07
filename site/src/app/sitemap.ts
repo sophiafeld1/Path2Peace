@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/modalities/emdr",
     "/modalities/ego-state-therapy",
     "/modalities/aedp",
+    "/modalities/yoga-and-meditation",
     "/fees-and-photos",
     "/faqs",
     "/blog",

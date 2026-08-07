@@ -100,4 +100,18 @@ export const modalities: Modality[] = [
       },
     ],
   },
+  {
+    slug: "yoga-and-meditation",
+    name: "Yoga and Meditation",
+    shortName: "Yoga & Meditation",
+    pageTitle: "Integrating Yoga and Mindfulness Meditation into Therapy",
+    description:
+      "Yoga and mindfulness practices integrated into therapy to support emotional regulation, nervous system healing, and mind-body connection.",
+    fullContent: [
+      "Healing involves more than understanding our thoughts. Many emotional struggles, including anxiety, trauma, stress, and grief, are experienced throughout the body as well as the mind. Yoga and mindfulness practices can be powerful tools for helping clients reconnect with themselves, develop greater self-awareness, and create a sense of calm and balance.",
+      "For adults, yoga and mindfulness can support emotional regulation, stress reduction, and nervous system healing. Simple movement, breathing exercises, guided meditation, and body-awareness practices can help clients recognize physical signs of stress, develop healthier responses to difficult emotions, and feel more grounded in the present moment. These practices can be particularly beneficial for individuals working through anxiety, trauma, chronic stress, or life transitions.",
+      "With children and adolescents, mindfulness and yoga are often adapted in playful, engaging, and developmentally appropriate ways. Activities may include movement, breathing exercises, visualization, mindfulness games, or sensory awareness practices that help children build emotional awareness, self-regulation, focus, and confidence. These tools can be especially helpful for children experiencing anxiety, big emotions, attention difficulties, social challenges, or stress related to school and family life.",
+      "When integrated thoughtfully into therapy, yoga and mindfulness are not about achieving perfect calm or flexibility. Rather, they provide opportunities to strengthen the connection between mind and body, increase resilience, and develop practical skills that clients can use both inside and outside of therapy. These practices can help clients of all ages cultivate a greater sense of safety, presence, and connection to themselves and the world around them.",
+    ],
+  },
 ];

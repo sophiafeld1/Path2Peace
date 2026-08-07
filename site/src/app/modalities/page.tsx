@@ -7,7 +7,7 @@ import { modalities } from "@/data/modalities";
 export const metadata: Metadata = {
   title: "Therapeutic Modalities",
   description:
-    "We integrate IFS, EMDR, Ego State Therapy, and AEDP to provide comprehensive trauma treatment.",
+    "We integrate IFS, EMDR, Ego State Therapy, AEDP, and yoga and mindfulness to provide comprehensive trauma treatment.",
 };
 
 export default function ModalitiesPage() {

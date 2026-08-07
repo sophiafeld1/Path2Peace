@@ -44,6 +44,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/yoga-and-meditation",
+        destination: "/modalities/yoga-and-meditation",
+        permanent: true,
+      },
+      {
         source: "/blogpathtopeacepsychotherapy",
         destination: "/blog",
         permanent: true,

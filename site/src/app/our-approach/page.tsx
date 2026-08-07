@@ -127,7 +127,7 @@ export default function OurApproachPage() {
             </p>
           </div>
 
-          <div className="flex gap-6 overflow-x-auto pb-2 snap-x snap-mandatory lg:grid lg:grid-cols-4 lg:overflow-visible lg:snap-none">
+          <div className="flex gap-6 overflow-x-auto pb-2 snap-x snap-mandatory lg:grid lg:grid-cols-5 lg:overflow-visible lg:snap-none">
             {modalities.map((modality) => (
               <div
                 key={modality.slug}

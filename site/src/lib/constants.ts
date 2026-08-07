@@ -29,6 +29,7 @@ export const NAV_LINKS = [
       { label: "EMDR Therapy", href: "/modalities/emdr" },
       { label: "Ego State Therapy", href: "/modalities/ego-state-therapy" },
       { label: "AEDP", href: "/modalities/aedp" },
+      { label: "Yoga and Meditation", href: "/modalities/yoga-and-meditation" },
     ],
   },
   { label: "Fees & Photos", href: "/fees-and-photos" },
