@@ -1,0 +1,60 @@
+Path to Peace — Brand Palette
+==============================
+
+Defined as Tailwind v4 tokens in site/src/app/globals.css. Reach for the
+token, not a raw hex — the role names below capture what each color is for.
+
+NEUTRALS
+  ivory     #F8F3EA   page background
+  surface   #FCF8F0   card / surface
+  ink       #34313A   headings, nav, charcoal dark sections
+  body      #4A4753   body copy (slightly softer than ink)
+
+PRIMARY TEAL  (brand + CTAs)
+  teal-50   #ECF6F8   very soft section tint
+  teal-100  #D8EDF1   pill bg / hover surface
+  teal-200  #B9DEE4   powder-blue soft section accent
+  teal-300  #8FC7CE   focus ring; squiggle on powder backdrop
+  teal-500  #4FA3AD   primary brand / CTA fill
+  teal-600  #3F8B94   CTA hover, primary link, photo ring on cool backdrop
+  teal-700  #2E6970   strong link hover; "dark blue" text on warm/light bg
+
+WARM ACCENT
+  caramel       #D8A76F   photo ring + squiggle on warm bg, italic emphasis,
+                          hero box frame
+  caramel-soft  #EAC9A4   softer caramel for fills / hovers
+
+BOLD ACCENT  (sparing — reserved)
+  mustard   #E5A400   use only when something truly needs to shout
+
+HEADER
+  banner-bg   #CAD8DF   top banner background
+
+RULES
+-----
+
+1. Decorative accents (photo rings, CurvyUnderline squiggles) match the
+   temperature family of what's directly behind them, with a slight darker
+   contrast inside the family. Mixing families clashes — caramel on a blue
+   sky reads as a complementary collision, not warmth.
+       Warm backdrop  → caramel
+       Cool backdrop  → teal-300 (squiggle) / teal-600 (ring)
+
+2. Primary CTA hover stays inside the teal scale: teal-500 → teal-600.
+   Hovers never jump to charcoal or out of the brand family.
+
+3. Form focus is brand teal (teal-500 border + teal-300 ring),
+   not an accent color.
+
+4. Dark surfaces (footer, image-less hero) use ink (#34313A), not pure black.
+
+5. "Dark blue text" on a warm or light backdrop → teal-700 (the palette's
+   deepest blue-leaning teal). Plain body copy → body. Headings → ink.
+
+DO NOT REINTRODUCE
+------------------
+
+These tokens were removed in the May 2026 palette refresh — do not add
+them back; new code must use the names above.
+
+  sage-*  brown  cream  warm-white  accent-blue  dark  heading  body-text

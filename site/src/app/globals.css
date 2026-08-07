@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Warm, modern palette. Teal-led with warm neutrals.
+     Old sage/brown tokens have been removed — do not reintroduce. */
+
+  /* Neutrals */
+  --color-ivory: #f8f3ea;        /* page background — warm ivory */
+  --color-surface: #fcf8f0;      /* card / surface — slightly warmer than white */
+  --color-ink: #34313a;          /* headings, nav, dark surfaces — warm charcoal */
+  --color-body: #4a4753;         /* body copy — softer than ink */
+
+  /* Primary teal scale */
+  --color-teal-50: #ecf6f8;      /* very soft section tint */
+  --color-teal-100: #d8edf1;     /* pill / hover surface */
+  --color-teal-200: #b9dee4;     /* powder-blue section accent */
+  --color-teal-300: #8fc7ce;     /* focus ring */
+  --color-teal-500: #4fa3ad;     /* primary brand / CTA */
+  --color-teal-600: #3f8b94;     /* primary link / CTA hover */
+  --color-teal-700: #2e6970;     /* primary active / strong link hover */
+
+  /* Warm accent — wave underlines, photo rings, italic emphasis */
+  --color-caramel: #d8a76f;
+  --color-caramel-soft: #eac9a4;
+
+  /* Bold accent — reserved, use sparingly */
+  --color-mustard: #e5a400;
+
+  /* Header banner — legacy site pale blue-gray */
+  --color-banner-bg: #cad8df;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Scale the whole type system up ~6% so rem-based text/spacing reads
+   larger and less dense (16px -> 17px base) for a warmer, easier read. */
+html {
+  font-size: 106.25%;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  font-weight: 450;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-ink);
+}

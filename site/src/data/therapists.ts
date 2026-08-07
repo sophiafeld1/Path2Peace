@@ -1,0 +1,116 @@
+export interface Therapist {
+  slug: string;
+  name: string;
+  title: string;
+  role: string;
+  image: string;
+  shortBio: string;
+  fullBio: string[];
+  quote?: string;
+  credentials: string[];
+  specializations: string[];
+  personalBackground?: string;
+  services: string;
+}
+
+export const therapists: Therapist[] = [
+  {
+    slug: "robin-feldman",
+    name: "Robin Feldman",
+    title: "LCSW",
+    role: "Director & Therapist",
+    image: "/images/therapists/robin-feldman.jpg",
+    shortBio:
+      "Over 20 years in private practice specializing in anxiety disorders, trauma, PTSD, developmental and attachment trauma, with particular expertise in adoption-related issues.",
+    fullBio: [
+      "Robin Feldman has over 20 years in private practice specializing in anxiety disorders, trauma, PTSD, developmental and attachment trauma, with particular expertise in adoption-related issues.",
+      "As founder of Path to Peace Psychotherapy, her therapeutic approach is collaborative with a focus on building on clients\u2019 core strengths and inner resources. She meets clients where they are, providing encouragement and support without being pushy. She treats teens and adults, emphasizing authentic relationships, warmth, and establishing trust before advancing therapeutic work.",
+      "Robin integrates somatic modalities including EMDR Therapy, Ego State Therapy, Internal Family Systems (IFS), and AEDP, alongside sand-tray play and mindfulness techniques.",
+    ],
+    quote:
+      "I treat teens and adults suffering from worry, pain, and fear, often stemming from early traumatic experiences, losses and/or complicated grief.",
+    credentials: [
+      "Licensed in Virginia, Maryland, and West Virginia (telehealth only)",
+      "EMDR Certified (completed over 20 years ago)",
+      "Master\u2019s degree in Social Work from Simmons College School of Social Work (now Simmons University)",
+      "Professional Affiliations: NASW, EMDRIA, Therapy First",
+    ],
+    specializations: [
+      "EMDR Therapy",
+      "Ego State Therapy",
+      "Internal Family Systems (IFS)",
+      "AEDP",
+      "Sand-tray play",
+      "Mindfulness techniques",
+    ],
+    personalBackground:
+      "Married 20+ years with two daughters in college. Hobbies include hiking, kayaking, yoga, reading, traveling, and dancing.",
+    services: "In-person and remote appointments available",
+  },
+  {
+    slug: "robert-alexander",
+    name: "Robert (Bobby) Alexander",
+    title: "LMSW",
+    role: "Therapist",
+    image: "/images/therapists/robert-alexander.jpg",
+    shortBio:
+      "Licensed Social Worker helping adults navigate life\u2019s transitions and challenges, including anxiety, depression, self-esteem issues, relationship concerns, and complex trauma.",
+    fullBio: [
+      "Robert (Bobby) Alexander is a Licensed Social Worker based in Reston, Virginia, serving clients in-person and via telehealth in Maryland, DC, and Virginia.",
+      "He serves adults 18+ and addresses anxiety, depression, trauma, substance use, relationship concerns, self-esteem, and career or life transitions. His practice is inclusive of LGBTQ+ clients, specifically supporting gay, lesbian, bisexual, and questioning individuals. His prior work in digital advertising, marketing, and entrepreneurship informs his understanding of career pressures and life transitions.",
+      "His therapeutic approach is trauma-informed and supportive, integrating Internal Family Systems, EMDR, and somatic work. He incorporates breathing exercises to develop self-regulation skills and body awareness.",
+    ],
+    credentials: [
+      "MSW from Silberman School of Social Work, Hunter College, NYC",
+      "Internal Family Systems (IFS) training from IFS Institute",
+      "EMDR Therapy & Parts Work for Complex Trauma certification",
+      "Integrative Somatic Parts Work (Levels 1 & 2)",
+      "EMDR Basic Training",
+      "Licensed in Virginia, Maryland, and DC",
+    ],
+    specializations: [
+      "Internal Family Systems (IFS)",
+      "EMDR Therapy",
+      "Somatic work",
+      "Career & life transitions",
+      "LGBTQ+ affirming care",
+      "Substance use recovery",
+    ],
+    personalBackground:
+      "Born in Australia, raised in New York City, with work experience in California. Professional background includes digital advertising, marketing, and entrepreneurship. Personal interests include yoga, meditation, cooking, baking, gardening, and exploring new destinations. Practices under supervision of Chelsea Nicole, LCSW.",
+    services: "In-person in Reston, Virginia; telehealth in Maryland, DC, and Virginia",
+  },
+  {
+    slug: "anita-madhava",
+    name: "Anita Madhava",
+    title: "MA",
+    role: "Therapist",
+    image: "/images/therapists/anita-madhava.jpg",
+    shortBio:
+      "Holistic therapist working with children, parents, adolescents, and adults experiencing stress, anxiety, depression, grief, trauma, and life transitions.",
+    fullBio: [
+      "Anita Madhava is a holistic therapist at Path to Peace Psychotherapy and a Resident in Counseling licensed in Virginia. She works with children, parents, adolescents, and adults experiencing stress, anxiety, depression, grief, trauma, life transitions, and disconnection from self or others.",
+      "Her treatment is client-centered, emphasizing listening with genuine care and unconditional positive regard. She believes healing is possible when clients feel emotionally and neurologically safe to be understood without judgment. Her style is gentle, grounded, and present, with compassionate yet honest engagement.",
+      "Anita integrates Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), somatic approaches, mindfulness, relational work, and nervous system–focused practices, alongside yoga and meditation. Her additional experience includes work in the education sector, volunteering with Crisis Text Line, chair yoga instruction for seniors, oncology yoga, and mindfulness-based practices.",
+    ],
+    credentials: [
+      "Master’s degree in Clinical Mental Health Counseling",
+      "Bachelor’s degree in Psychology",
+      "Advanced certificate in Yoga and Meditation (specialization in Cancer Yoga and Yoga Nidra)",
+      "Certified Yoga and Meditation Teacher",
+      "Resident in Counseling, licensed in Virginia",
+      "Practices under supervision of Candice Arnold, LPC, LSATP",
+    ],
+    specializations: [
+      "Cognitive Behavioral Therapy (CBT)",
+      "Acceptance and Commitment Therapy (ACT)",
+      "Somatic approaches",
+      "Mindfulness practices",
+      "Relational work",
+      "Yoga & meditation",
+    ],
+    personalBackground:
+      "A Northern Virginia native and mother of three. Her interests include art galleries, writing, music, nature, and tongue drum.",
+    services: "In-person in Reston, Virginia, and telehealth across Virginia",
+  },
+];
