@@ -2,7 +2,7 @@ import Link from "next/link";
 
 interface ButtonProps {
   href?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "green";
   children: React.ReactNode;
   className?: string;
   type?: "button" | "submit";
@@ -22,12 +22,15 @@ export default function Button({
   // Two-tier system, one shape language (rounded-lg):
   //  - primary   = "take action / convert" (filled teal, ivory text)
   //  - secondary = "explore / navigate" (teal outline, soft-fills on hover)
+  //  - green     = header Contact Us sage — solid CTA on photo backgrounds
   const base =
     "inline-flex items-center justify-center px-7 py-3 text-base font-semibold tracking-wide rounded-lg shadow-sm transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-md active:translate-y-0 active:shadow-sm";
   const variants = {
     primary: "bg-teal-500 text-ivory hover:bg-teal-600",
     secondary:
       "border border-teal-500 text-teal-600 hover:bg-teal-100 hover:border-teal-600 hover:text-teal-700",
+    green:
+      "bg-banner-line text-ivory hover:brightness-90 active:brightness-95",
   };
 
   const classes = `${base} ${variants[variant]} ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`;

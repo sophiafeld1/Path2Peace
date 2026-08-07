@@ -61,10 +61,25 @@ export default async function TherapistPage({ params }: Props) {
               {therapist.services && (
                 <p className="mt-1 text-body text-sm">{therapist.services}</p>
               )}
-              <div className="mt-8">
-                <Button href="/contact" variant="primary">
-                  schedule an appointment today
+              <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-5 sm:gap-6">
+                <Button
+                  href="/contact"
+                  variant={therapist.contactCtaText ? "green" : "primary"}
+                  className="shadow-md ring-2 ring-ivory/60"
+                >
+                  {therapist.contactCtaText ?? "schedule an appointment today"}
                 </Button>
+                {therapist.certificationImage && (
+                  <div className="relative h-24 w-24 sm:h-28 sm:w-28 shrink-0">
+                    <Image
+                      src={therapist.certificationImage}
+                      alt={therapist.certificationAlt ?? "Professional certification"}
+                      fill
+                      className="object-contain"
+                      sizes="112px"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -73,36 +88,77 @@ export default async function TherapistPage({ params }: Props) {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 space-y-10">
-          {therapist.quote && (
+          {therapist.quote && !therapist.bioSections && (
             <blockquote className="text-lg italic text-body border-l-4 border-caramel pl-6">
               &ldquo;{therapist.quote}&rdquo;
             </blockquote>
           )}
 
-          <div>
-            <h2 className="font-heading text-2xl font-bold text-ink mb-4">
-              About
-            </h2>
-            {therapist.fullBio.map((p, i) => (
-              <p key={i} className="text-body leading-relaxed mb-4 last:mb-0">
-                {p}
-              </p>
-            ))}
-          </div>
+          {therapist.bioSections ? (
+            therapist.bioSections.map((section) => (
+              <div key={section.title}>
+                <h2 className="font-heading text-2xl font-bold text-ink mb-4">
+                  {section.title}
+                </h2>
+                {section.paragraphs.map((p) => (
+                  <p
+                    key={p.slice(0, 40)}
+                    className="text-body leading-relaxed mb-4 last:mb-0"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+            ))
+          ) : (
+            therapist.fullBio && (
+              <div>
+                <h2 className="font-heading text-2xl font-bold text-ink mb-4">
+                  About
+                </h2>
+                {therapist.fullBio.map((p) => (
+                  <p
+                    key={p.slice(0, 40)}
+                    className="text-body leading-relaxed mb-4 last:mb-0"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+            )
+          )}
 
-          <div>
-            <h2 className="font-heading text-2xl font-bold text-ink mb-4">
-              Credentials & Training
-            </h2>
-            <ul className="space-y-2">
-              {therapist.credentials.map((c, i) => (
-                <li key={i} className="flex items-start gap-2 text-body">
-                  <span className="text-caramel mt-1">&#8226;</span>
-                  {c}
-                </li>
+          {therapist.credentialsSection ? (
+            <div>
+              <h2 className="font-heading text-2xl font-bold text-ink mb-4">
+                {therapist.credentialsSection.title}
+              </h2>
+              {therapist.credentialsSection.paragraphs.map((p) => (
+                <p
+                  key={p.slice(0, 40)}
+                  className="text-body leading-relaxed mb-4 last:mb-0"
+                >
+                  {p}
+                </p>
               ))}
-            </ul>
-          </div>
+            </div>
+          ) : (
+            therapist.credentials && (
+              <div>
+                <h2 className="font-heading text-2xl font-bold text-ink mb-4">
+                  Credentials & Training
+                </h2>
+                <ul className="space-y-2">
+                  {therapist.credentials.map((c) => (
+                    <li key={c} className="flex items-start gap-2 text-body">
+                      <span className="text-caramel mt-1">&#8226;</span>
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          )}
 
           <div>
             <h2 className="font-heading text-2xl font-bold text-ink mb-4">
@@ -123,7 +179,7 @@ export default async function TherapistPage({ params }: Props) {
           {therapist.personalBackground && (
             <div>
               <h2 className="font-heading text-2xl font-bold text-ink mb-4">
-                Personal Background
+                {therapist.personalBackgroundTitle ?? "Personal Background"}
               </h2>
               <p className="text-body leading-relaxed">
                 {therapist.personalBackground}
