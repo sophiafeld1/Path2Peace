@@ -30,6 +30,9 @@
   --color-banner-bg: #dae2e9;
   --color-banner-line: #9b9e78;
 
+  /* Logo leaf green — darkened for readable contrast on ivory */
+  --color-logo-green: #527648;
+
   /* Soft section blue — between banner-bg and teal-200 */
   --color-section-blue: #d0dce8;
 
@@ -55,5 +58,4 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-ink);
 }
