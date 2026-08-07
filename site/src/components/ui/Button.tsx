@@ -23,10 +23,9 @@ export default function Button({
   //  - primary   = "take action / convert" (filled teal, ivory text)
   //  - secondary = "explore / navigate" (teal outline, soft-fills on hover)
   const base =
-    "inline-flex items-center justify-center px-7 py-3 text-base font-semibold tracking-wide rounded-lg transition-all duration-200";
+    "inline-flex items-center justify-center px-7 py-3 text-base font-semibold tracking-wide rounded-lg shadow-sm transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-md active:translate-y-0 active:shadow-sm";
   const variants = {
-    primary:
-      "bg-teal-500 text-ivory shadow-sm hover:bg-teal-600 hover:shadow-md hover:-translate-y-0.5",
+    primary: "bg-teal-500 text-ivory hover:bg-teal-600",
     secondary:
       "border border-teal-500 text-teal-600 hover:bg-teal-100 hover:border-teal-600 hover:text-teal-700",
   };

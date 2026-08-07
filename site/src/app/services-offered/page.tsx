@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import ServiceFeatureCard from "@/components/ui/ServiceFeatureCard";
+import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "Services Offered",
@@ -101,12 +101,9 @@ export default function ServicesOfferedPage() {
         </div>
 
         <div className="mt-14 text-center">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-lg bg-teal-500 px-8 py-3 text-base font-semibold tracking-wide text-ivory shadow-sm transition-all hover:bg-teal-600"
-          >
+          <Button href="/contact" variant="primary">
             contact us
-          </Link>
+          </Button>
         </div>
       </div>
     </section>
