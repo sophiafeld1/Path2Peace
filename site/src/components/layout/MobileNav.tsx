@@ -27,7 +27,7 @@ export default function MobileNav() {
       </button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-20 bg-white shadow-lg border-t border-gray-100 z-50">
+        <div className="absolute left-0 right-0 top-full bg-banner-bg shadow-lg border-t border-ink/10 z-50">
           <div className="px-4 py-4 space-y-1">
             {NAV_LINKS.map((link) => {
               const hasChildren = "children" in link && link.children;
@@ -37,7 +37,7 @@ export default function MobileNav() {
                     <Link
                       href={link.href}
                       onClick={() => setOpen(false)}
-                      className="block py-2 text-sm font-medium text-ink hover:text-teal-600"
+                      className="block py-2 text-[19px] font-semibold text-black hover:text-teal-700"
                     >
                       {link.label}
                     </Link>
@@ -70,7 +70,7 @@ export default function MobileNav() {
                           key={child.href}
                           href={child.href}
                           onClick={() => setOpen(false)}
-                          className="block py-2 text-sm text-teal-600 hover:text-ink"
+                          className="block py-2 text-[19px] font-semibold text-black hover:text-teal-700"
                         >
                           {child.label}
                         </Link>
