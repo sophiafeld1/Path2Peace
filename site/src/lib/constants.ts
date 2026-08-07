@@ -9,6 +9,7 @@ export const BUSINESS = {
 } as const;
 
 export const NAV_LINKS = [
+  { label: "Services Offered", href: "/services-offered" },
   { label: "Home", href: "/" },
   { label: "Our Approach", href: "/our-approach" },
   {
@@ -39,7 +40,7 @@ export const NAV_LINKS = [
 
 /** Desktop banner nav — two rows matching legacy site layout */
 export const BANNER_NAV_ROW_1 = [
-  { label: "Services Offered", href: "/modalities" },
+  { label: "Services Offered", href: "/services-offered" },
   { label: "Home", href: "/" },
   { label: "Our Approach", href: "/our-approach" },
   { label: "Meet Our Therapists", href: "/therapists" },

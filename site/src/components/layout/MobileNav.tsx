@@ -37,7 +37,7 @@ export default function MobileNav() {
                     <Link
                       href={link.href}
                       onClick={() => setOpen(false)}
-                      className="block py-2 text-[19px] font-semibold text-black hover:text-teal-700"
+                      className="block py-2 text-[22px] font-semibold text-black hover:text-teal-700"
                     >
                       {link.label}
                     </Link>
@@ -70,7 +70,7 @@ export default function MobileNav() {
                           key={child.href}
                           href={child.href}
                           onClick={() => setOpen(false)}
-                          className="block py-2 text-[19px] font-semibold text-black hover:text-teal-700"
+                          className="block py-2 text-[22px] font-semibold text-black hover:text-teal-700"
                         >
                           {child.label}
                         </Link>

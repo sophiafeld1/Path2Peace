@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans, Playfair_Display } from "next/font/google";
+import { Inter, DM_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -14,10 +14,10 @@ const dmSans = DM_Sans({
   subsets: ["latin"],
 });
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant-garamond",
   subsets: ["latin"],
-  weight: ["600", "700"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${dmSans.variable} ${playfairDisplay.variable} antialiased`}>
+      <body className={`${inter.variable} ${dmSans.variable} ${cormorantGaramond.variable} antialiased`}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
