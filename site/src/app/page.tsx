@@ -33,8 +33,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Transforming Trauma section - light blue/lavender bg */}
-      <section className="py-16 sm:py-20 bg-teal-200">
+      {/* Transforming Trauma section — muted blue, closer to header than teal-200 */}
+      <section className="py-16 sm:py-20 bg-section-blue">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink mb-3">
             Transforming Trauma into Triumph:

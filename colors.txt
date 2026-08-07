@@ -28,7 +28,11 @@ BOLD ACCENT  (sparing — reserved)
   mustard   #E5A400   use only when something truly needs to shout
 
 HEADER
-  banner-bg   #CAD8DF   top banner background
+  banner-bg   #DAE2E9   top banner background
+  banner-line #9B9E78   banner gold rule + Contact Us button
+
+SECTION
+  section-blue  #D0DCE8   soft content band — between banner-bg and teal-200
 
 RULES
 -----

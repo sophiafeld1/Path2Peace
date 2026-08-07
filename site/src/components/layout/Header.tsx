@@ -71,7 +71,8 @@ export default function Header() {
   };
 
   return (
-    <header className="border-b-2 border-banner-line bg-banner-bg font-banner shadow-sm sticky top-0 z-50">
+    <header className="bg-banner-bg font-banner shadow-sm z-50 pt-px">
+      <div className="border-y-2 border-banner-line">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-auto items-center justify-between gap-4 py-3">
           <Link href="/" className="flex shrink-0 items-center">
@@ -105,6 +106,7 @@ export default function Header() {
           <MobileNav />
         </div>
       </nav>
+      </div>
     </header>
   );
 }

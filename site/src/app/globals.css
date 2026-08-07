@@ -30,6 +30,9 @@
   --color-banner-bg: #dae2e9;
   --color-banner-line: #9b9e78;
 
+  /* Soft section blue — between banner-bg and teal-200 */
+  --color-section-blue: #d0dce8;
+
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-banner: var(--font-cormorant-garamond), "Cormorant Garamond", ui-serif, Georgia,
