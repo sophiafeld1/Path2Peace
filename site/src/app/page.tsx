@@ -3,14 +3,14 @@ import Link from "next/link";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CurvyUnderline from "@/components/ui/CurvyUnderline";
 import Button from "@/components/ui/Button";
-import ContactInfo from "@/components/ui/ContactInfo";
 import { therapists } from "@/data/therapists";
+import { BUSINESS } from "@/lib/constants";
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero - mountain image with light muted overlay, centered italic text in a bordered box */}
-      <section className="relative overflow-hidden">
+      {/* Full-screen hero — Cura-style centered copy over nature photo */}
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
         <Image
           src="/images/hero/hero-nature.jpg"
           alt=""
@@ -19,16 +19,23 @@ export default function HomePage() {
           priority
           sizes="100vw"
         />
-        {/* Fully transparent text frame — border matches the text color
-            (teal-700) so the box reads as a single dark-blue feature. */}
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 flex items-center justify-center">
-          <div className="border-2 border-teal-700 rounded-[2.5rem] px-10 py-10 sm:px-14 sm:py-12 max-w-2xl">
-            <p className="text-center text-teal-700 text-lg sm:text-2xl font-semibold italic leading-relaxed">
-              We&apos;re a warm welcoming practice of trauma specialists located
-              in Reston, Virginia, offering support for kids, teens, adults, and
-              families. We&apos;re here to help you navigate life&apos;s challenges with
-              utmost care and understanding.
-            </p>
+        <div className="absolute inset-0 bg-ink/30" aria-hidden />
+        <div className="relative z-10 mx-auto max-w-4xl px-4 py-20 text-center text-ivory sm:px-6 lg:px-8">
+          <p className="font-banner text-xs font-medium uppercase tracking-[0.22em] text-ivory/90 sm:text-sm">
+            {BUSINESS.name}
+          </p>
+          <h1 className="mt-6 font-heading text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
+            Your Journey to Healing and a{" "}
+            <em className="font-banner italic">Path to Peace</em> Starts Here.
+          </h1>
+          <div className="mt-10">
+            <Button
+              href="/contact"
+              variant="primary"
+              className="tracking-wide sm:px-10"
+            >
+              reach out to us today
+            </Button>
           </div>
         </div>
       </section>
@@ -42,9 +49,12 @@ export default function HomePage() {
           {/* On powder-blue bg: same-family teal-300, not caramel — the
               squiggle's shape is the emphasis, not its contrast. */}
           <CurvyUnderline className="mt-1 mb-6 h-3 w-44 sm:w-52 text-teal-300 mx-auto" />
-          <h3 className="font-heading text-lg sm:text-xl font-semibold text-ink mb-10">
-            Your Journey to Healing and a <em>Path to Peace</em> Starts Here.
-          </h3>
+          <p className="text-body leading-relaxed mb-10">
+            We&apos;re a warm welcoming practice of trauma specialists located
+            in Reston, Virginia, offering support for kids, teens, adults, and
+            families. We&apos;re here to help you navigate life&apos;s challenges with
+            utmost care and understanding.
+          </p>
           <div className="space-y-4 text-center">
             <p className="text-body leading-relaxed">
               We&apos;re grateful for the chance to help our clients make
