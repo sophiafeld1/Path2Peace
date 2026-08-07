@@ -53,26 +53,28 @@ export default function ServicesOfferedPage() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl border-b border-ink/[0.06] pb-14 text-center">
+        <div className="mx-auto max-w-4xl border-b border-ink/[0.06] pb-14 text-center">
           <span className="inline-block rounded-full border border-logo-green/35 px-4 py-1.5 text-sm font-medium tracking-wide text-logo-green">
             Path to Peace Psychotherapy
           </span>
           <h2 className="mt-6 !font-banner text-3xl font-bold leading-tight !text-logo-green sm:text-4xl lg:text-[2.75rem]">
             Our services
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-body sm:text-lg">
-            Path to Peace Psychotherapy offers in-person counseling services at
-            our welcoming office in Reston, Virginia, conveniently located near
-            Reston Town Center. Our practice is easily accessible for
-            individuals, teens, and families seeking therapy in Reston, Herndon,
-            Great Falls, Vienna, Oakton, Fairfax, and surrounding Northern
-            Virginia communities.
-          </p>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-body sm:text-lg">
-            We understand that flexibility is important. In addition to
-            in-person appointments, we offer secure telehealth and hybrid
-            therapy throughout Virginia, Maryland and DC.
-          </p>
+          <div className="mx-auto mt-5 max-w-4xl rounded-xl border border-ink/[0.06] bg-surface/75 p-6 text-left shadow-sm sm:p-8">
+            <p className="text-base leading-relaxed text-body sm:text-lg">
+              Path to Peace Psychotherapy offers in-person counseling services at
+              our welcoming office in Reston, Virginia, conveniently located near
+              Reston Town Center. Our practice is easily accessible for
+              individuals, teens, and families seeking therapy in Reston, Herndon,
+              Great Falls, Vienna, Oakton, Fairfax, and surrounding Northern
+              Virginia communities.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-body sm:text-lg">
+              We understand that flexibility is important. In addition to
+              in-person appointments, we offer secure telehealth and hybrid
+              therapy throughout Virginia, Maryland and DC.
+            </p>
+          </div>
         </div>
 
         <div className="mt-14 space-y-12">
