@@ -5,7 +5,8 @@ export interface Modality {
   description: string;
   pageTitle: string;
   fullContent: string[];
-  sections?: { heading: string; content: string }[];
+  sections?: { heading: string; content: string; card?: boolean }[];
+  sectionsAsCards?: boolean;
 }
 
 export const modalities: Modality[] = [
@@ -45,8 +46,10 @@ export const modalities: Modality[] = [
         heading: "The IFS Process",
         content:
           "In IFS, the goal is not to eliminate parts but to listen to and understand them. By doing so, parts can let go of their extreme roles and feel safe, and the person can function with more balance and harmony. Overall, IFS helps people resolve inner conflicts, heal past traumas, and achieve a greater sense of self-awareness and emotional well-being by working with and understanding these internal parts.",
+        card: false,
       },
     ],
+    sectionsAsCards: true,
   },
   {
     slug: "emdr",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import HeroSection from "@/components/ui/HeroSection";
+import ServiceFeatureCard from "@/components/ui/ServiceFeatureCard";
 import ContactInfo from "@/components/ui/ContactInfo";
 import { modalities } from "@/data/modalities";
 
@@ -45,15 +46,47 @@ export default async function ModalityPage({ params }: Props) {
           </div>
 
           {modality.sections && modality.sections.length > 0 && (
-            <div className="mt-10 space-y-8">
-              {modality.sections.map((section, i) => (
-                <div key={i}>
-                  <h2 className="font-heading text-xl font-bold text-ink mb-3">
-                    {section.heading}
-                  </h2>
-                  <p className="text-body leading-relaxed">{section.content}</p>
+            <div className="mt-10">
+              {modality.sectionsAsCards ? (
+                <>
+                  <div className="space-y-4">
+                    {modality.sections
+                      .filter((section) => section.card !== false)
+                      .map((section) => (
+                        <ServiceFeatureCard
+                          key={section.heading}
+                          title={section.heading}
+                          description={section.content}
+                        />
+                      ))}
+                  </div>
+                  {modality.sections
+                    .filter((section) => section.card === false)
+                    .map((section) => (
+                      <div key={section.heading} className="mt-10">
+                        <h2 className="font-heading text-xl font-bold text-ink mb-3">
+                          {section.heading}
+                        </h2>
+                        <p className="text-body leading-relaxed">
+                          {section.content}
+                        </p>
+                      </div>
+                    ))}
+                </>
+              ) : (
+                <div className="space-y-8">
+                  {modality.sections.map((section) => (
+                    <div key={section.heading}>
+                      <h2 className="font-heading text-xl font-bold text-ink mb-3">
+                        {section.heading}
+                      </h2>
+                      <p className="text-body leading-relaxed">
+                        {section.content}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
           )}
         </div>
