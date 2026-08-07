@@ -49,12 +49,6 @@ export default function HomePage() {
           {/* On powder-blue bg: same-family teal-300, not caramel — the
               squiggle's shape is the emphasis, not its contrast. */}
           <CurvyUnderline className="mt-1 mb-6 h-3 w-44 sm:w-52 text-teal-300 mx-auto" />
-          <p className="text-body leading-relaxed mb-10">
-            We&apos;re a warm welcoming practice of trauma specialists located
-            in Reston, Virginia, offering support for kids, teens, adults, and
-            families. We&apos;re here to help you navigate life&apos;s challenges with
-            utmost care and understanding.
-          </p>
           <div className="space-y-4 text-center">
             <p className="text-body leading-relaxed">
               We&apos;re grateful for the chance to help our clients make
@@ -156,6 +150,37 @@ export default function HomePage() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Practice overview — same format as Transforming Trauma section */}
+      <section className="py-16 sm:py-20 bg-section-blue">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink mb-3">
+            Path to Peace Psychotherapy
+          </h2>
+          <CurvyUnderline className="mt-1 mb-6 h-3 w-44 sm:w-52 text-teal-300 mx-auto" />
+          <div className="mx-auto max-w-4xl space-y-4 text-center">
+            <p className="text-body leading-relaxed">
+              Path to Peace Psychotherapy is a warm and welcoming trauma therapy
+              practice in Reston, Virginia, serving clients throughout Fairfax
+              County and Northern Virginia, including Herndon, Sterling, Great
+              Falls, Tysons Corner, Vienna, and nearby communities.
+            </p>
+            <p className="text-body leading-relaxed">
+              Our team of trauma specialists provides compassionate therapy for
+              children, teens, adults, and families. Whether you are navigating
+              anxiety, trauma, grief, relationship challenges, life transitions,
+              or the lasting effects of difficult experiences, we are here to help
+              you feel supported, understood, and less alone.
+            </p>
+            <p className="text-body leading-relaxed">
+              At Path to Peace Psychotherapy, we offer a safe and caring space
+              where healing can begin. Our therapists bring warmth, expertise,
+              and deep respect for each person&apos;s story, helping clients move
+              toward greater calm, connection, and resilience.
+            </p>
           </div>
         </div>
       </section>
