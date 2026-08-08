@@ -20,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/faqs",
     "/blog",
     "/mens-therapy-group",
+    "/mens-therapy-group/tolerating-emotions-building-connections",
+    "/mens-therapy-group/capable-men-in-their-20s-feeling-stuck",
     "/contact",
   ];
 

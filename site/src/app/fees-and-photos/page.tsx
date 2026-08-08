@@ -25,30 +25,30 @@ export default function FeesAndPhotosPage() {
   return (
     <>
       <HeroSection
-        title="Insurance Info"
+        title="Fees & Photos"
         backgroundImage="/images/hero/hero-nature.jpg"
       />
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 space-y-10">
-          <div>
+          <div className="space-y-4">
             <p className="text-body leading-relaxed">
-              Our counseling services are self pay only. We do not participate in
-              insurance companies. As licensed social workers (LCSW/LMSW),
-              sessions may qualify for insurance reimbursement. As an &ldquo;out
-              of network&rdquo; provider, full payment is made to Path to Peace
-              Psychotherapy LLC at the time of service. At your request, a
-              monthly statement (superbill) will be provided should you wish to
-              submit for reimbursement. I encourage you to contact your insurance
-              company to find out about your specific out of pocket mental health
-              coverage.
+              Our counseling services are self-pay or out-of-network. We do not
+              participate with insurance companies. As licensed social workers
+              (LCSW/LMSW), sessions may qualify for insurance reimbursement. As an
+              out-of-network provider, full payment is made to Path to Peace
+              Psychotherapy at the time of service. A monthly statement (superbill)
+              will be provided should you wish to submit for reimbursement.
+              It&apos;s recommended you contact your insurance company to find out
+              about your specific out-of-network mental health coverage.
             </p>
-            <p className="text-body leading-relaxed mt-4">
-              As stated in the No Surprises Act, you are entitled to fair and
-              accurate information about your therapy charges. Below are the fees
-              you can expect to pay per session. Your annual investment in
-              therapy will vary based on what services you utilize and how often
-              you participate in therapy.
+            <p className="text-body leading-relaxed">
+              In accordance with the No Surprises Act, you have the right to receive
+              clear and transparent information about therapy costs. The fees listed
+              below reflect the cost per session. Because we specialize in treating
+              complex trauma, your total investment over time will vary based on
+              your individual history, needs, and the level of care and consistency
+              that best supports your healing.
             </p>
           </div>
 
@@ -57,11 +57,26 @@ export default function FeesAndPhotosPage() {
               Rates
             </h2>
             <p className="text-body leading-relaxed">
-              $185-190 per 55-minute session. Fee varies by therapist.
+              $185-190 per 55 minute session. Fee varies by therapist.
             </p>
-            <p className="text-body leading-relaxed mt-2">
-              Payment: Cash, debit card, check, credit card, HSA/FSA cards are
-              accepted for payment.
+            <p className="text-body leading-relaxed mt-4">
+              $225-230 for 60 minute initial intake session.
+            </p>
+            <p className="text-body leading-relaxed mt-4">
+              <span className="font-semibold text-ink">Payment:</span> Cash, debit
+              card, check, credit cards, and HSA/FSA cards are accepted. To avoid
+              credit card transaction fees, payment by check is recommended.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-heading text-2xl font-bold text-ink mb-4">
+              Cancellation Policy
+            </h2>
+            <p className="text-body leading-relaxed">
+              If you do not show up for your scheduled therapy appointment or
+              notification of cancelations is not given at least 24 hours in
+              advance, you will be required to pay the full cost of the session.
             </p>
           </div>
         </div>

@@ -59,6 +59,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/tolerating-emotions-building-connections",
+        destination: "/mens-therapy-group/tolerating-emotions-building-connections",
+        permanent: true,
+      },
+      {
+        source: "/finding-traction",
+        destination: "/mens-therapy-group/capable-men-in-their-20s-feeling-stuck",
+        permanent: true,
+      },
+      {
         source: "/contactus",
         destination: "/contact",
         permanent: true,

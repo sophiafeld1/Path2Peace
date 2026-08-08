@@ -35,7 +35,20 @@ export const NAV_LINKS = [
   { label: "Fees & Photos", href: "/fees-and-photos" },
   { label: "FAQs", href: "/faqs" },
   { label: "Our Blog", href: "/blog" },
-  { label: "Men's Therapy Groups", href: "/mens-therapy-group" },
+  {
+    label: "Men's Therapy Groups",
+    href: "/mens-therapy-group",
+    children: [
+      {
+        label: "Tolerating Emotions, Building Connections",
+        href: "/mens-therapy-group/tolerating-emotions-building-connections",
+      },
+      {
+        label: "Capable Men in their 20's Feeling Stuck",
+        href: "/mens-therapy-group/capable-men-in-their-20s-feeling-stuck",
+      },
+    ],
+  },
   { label: "Contact Us", href: "/contact" },
 ] as const;
 

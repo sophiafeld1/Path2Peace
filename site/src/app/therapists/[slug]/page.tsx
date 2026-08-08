@@ -41,10 +41,9 @@ export default async function TherapistPage({ params }: Props) {
           sizes="100vw"
         />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:justify-center md:gap-14 lg:gap-20">
-            {/* Ring picks up the cool sky behind it — teal-600 reads as a
-                slight darker contrast, where caramel would clash. */}
-            <div className="w-52 h-72 sm:w-60 sm:h-80 md:w-64 md:h-96 rounded-full overflow-hidden relative shrink-0 ring-4 ring-teal-600">
+          <div className="mx-auto flex max-w-4xl flex-col items-center gap-10 md:grid md:max-w-3xl md:translate-x-6 md:grid-cols-[16rem_minmax(0,1fr)] md:items-start md:gap-x-14 lg:max-w-4xl lg:translate-x-10 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-x-20">
+            {/* Fixed grid column keeps every therapist photo in the same spot. */}
+            <div className="w-52 h-72 sm:w-60 sm:h-80 md:w-64 md:h-96 rounded-full overflow-hidden relative shrink-0 ring-4 ring-teal-600 md:col-start-1 md:row-start-1">
               <Image
                 src={therapist.image}
                 alt={therapist.name}
@@ -53,7 +52,7 @@ export default async function TherapistPage({ params }: Props) {
                 sizes="256px"
               />
             </div>
-            <div className="text-center md:text-left">
+            <div className="text-center md:col-start-2 md:row-start-1 md:text-left">
               <h1 className="font-heading text-2xl sm:text-3xl font-bold text-ink">
                 {therapist.name}, {therapist.title}
               </h1>

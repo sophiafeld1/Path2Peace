@@ -102,6 +102,7 @@ export const therapists: Therapist[] = [
     personalBackground:
       "Born in Australia, raised in New York City, with work experience in California. Professional background includes digital advertising, marketing, and entrepreneurship. Personal interests include yoga, meditation, cooking, baking, gardening, and exploring new destinations. Practices under supervision of Chelsea Nicole, LCSW.",
     services: "In-person in Reston, Virginia; telehealth in Maryland, DC, and Virginia",
+    contactCtaText: "Contact Robert",
   },
   {
     slug: "anita-madhava",
@@ -135,5 +136,6 @@ export const therapists: Therapist[] = [
     personalBackground:
       "A Northern Virginia native and mother of three. Her interests include art galleries, writing, music, nature, and tongue drum.",
     services: "In-person in Reston, Virginia, and telehealth across Virginia",
+    contactCtaText: "Contact Anita",
   },
 ];
