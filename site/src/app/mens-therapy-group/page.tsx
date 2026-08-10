@@ -16,7 +16,7 @@ export default function MensTherapyGroupPage() {
       <HeroSection
         title="Men's Therapy Groups"
         subtitle="A safe, grounded, judgment-free space to explore self-awareness, emotional regulation, and the powerful connection between body and mind."
-        backgroundImage="/images/hero/mens-group-photo.jpeg"
+        backgroundImage="/images/hero/hero-nature.jpg"
       />
 
       <section className="py-16 sm:py-20">
