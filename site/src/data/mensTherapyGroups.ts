@@ -8,6 +8,10 @@ export interface MensTherapyGroup {
   bullets?: string[];
   closing?: string;
   interestFormUrl: string;
+  flyerImage?: string;
+  flyerAlt?: string;
+  flyerWidth?: number;
+  flyerHeight?: number;
 }
 
 export const mensTherapyGroups: MensTherapyGroup[] = [
@@ -33,6 +37,11 @@ export const mensTherapyGroups: MensTherapyGroup[] = [
     ],
     closing: "Starting in May!",
     interestFormUrl: "https://forms.gle/HxZnLB8p9XXAV6pG8",
+    flyerImage: "/images/MensGroupToleratingEmotions.webp",
+    flyerAlt:
+      "Flyer for the Weekly Men's Group — Tolerating Emotions, Building Connections",
+    flyerWidth: 1500,
+    flyerHeight: 1941,
   },
   {
     slug: "capable-men-in-their-20s-feeling-stuck",
@@ -55,5 +64,9 @@ export const mensTherapyGroups: MensTherapyGroup[] = [
       "Fee: $80 per session (superbill available for out-of-network reimbursement)",
     ],
     interestFormUrl: "https://forms.gle/h5dTjTTWnSG4Yd8S7",
+    flyerImage: "/images/MensGroupFindingTraction.webp",
+    flyerAlt: "Flyer for Finding Traction — Men's Therapy Group",
+    flyerWidth: 1500,
+    flyerHeight: 2251,
   },
 ];
