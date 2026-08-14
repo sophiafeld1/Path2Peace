@@ -9,33 +9,33 @@ import { BUSINESS } from "@/lib/constants";
 export default function HomePage() {
   return (
     <>
-      {/* Full-screen hero — Cura-style centered copy over nature photo */}
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-        <Image
-          src="/images/hero/hero-nature.jpg"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
+      {/* Hero — background on the section itself so it always fills edge-to-edge */}
+      <section
+        className="relative overflow-hidden bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/hero/hero-nature.jpg')",
+          backgroundPosition: "50% calc(50% - 2.5in)",
+        }}
+      >
         <div className="absolute inset-0 bg-ink/30" aria-hidden />
-        <div className="relative z-10 mx-auto max-w-4xl px-4 py-20 text-center text-ivory sm:px-6 lg:px-8">
-          <p className="font-banner text-xs font-medium uppercase tracking-[0.22em] text-ivory/90 sm:text-sm">
-            {BUSINESS.name}
-          </p>
-          <h1 className="mt-6 font-heading text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
-            Your Journey to Healing and a{" "}
-            <em className="font-banner italic">Path to Peace</em> Starts Here.
-          </h1>
-          <div className="mt-10">
-            <Button
-              href="/contact"
-              variant="primary"
-              className="tracking-wide sm:px-10"
-            >
-              reach out to us today
-            </Button>
+        <div className="relative z-10 flex items-center justify-center px-4 py-20 text-center text-ivory sm:px-6 sm:py-28 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <p className="font-banner text-xs font-medium uppercase tracking-[0.22em] text-ivory/90 sm:text-sm">
+              {BUSINESS.name}
+            </p>
+            <h1 className="mt-6 font-heading text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
+              Your Journey to Healing and a{" "}
+              <em className="font-banner italic">Path to Peace</em> Starts Here.
+            </h1>
+            <div className="mt-10">
+              <Button
+                href="/contact"
+                variant="primary"
+                className="tracking-wide sm:px-10"
+              >
+                reach out to us today
+              </Button>
+            </div>
           </div>
         </div>
       </section>
