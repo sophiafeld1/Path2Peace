@@ -21,14 +21,14 @@ export default function Footer() {
         </div>
 
         {/* Contact info */}
-        <div className="flex flex-col sm:flex-row items-center justify-between text-sm text-ivory/80 border-t border-ivory/15 pt-6">
-          <div className="flex items-center gap-2 mb-2 sm:mb-0">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-x-8 gap-y-3 text-sm text-ivory/80 border-t border-ivory/15 pt-6 text-center">
+          <div className="flex flex-wrap items-center justify-center gap-x-2">
             <span>Phone number:</span>
             <a href={BUSINESS.phoneHref} className="hover:text-white transition-colors">
               {BUSINESS.phone}
             </a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-x-2">
             <span>Office and mailing address:</span>
             <span>{BUSINESS.address}</span>
           </div>
