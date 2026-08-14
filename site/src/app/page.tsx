@@ -4,7 +4,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import CurvyUnderline from "@/components/ui/CurvyUnderline";
 import Button from "@/components/ui/Button";
 import { therapists } from "@/data/therapists";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, HERO_MOUNTAIN_IMAGE, HERO_MOUNTAIN_POSITION } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -13,8 +13,8 @@ export default function HomePage() {
       <section
         className="relative overflow-hidden bg-cover bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/hero/hero-nature.jpg')",
-          backgroundPosition: "50% calc(50% - 2.5in)",
+          backgroundImage: `url('${HERO_MOUNTAIN_IMAGE}')`,
+          backgroundPosition: HERO_MOUNTAIN_POSITION,
         }}
       >
         <div className="absolute inset-0 bg-ink/30" aria-hidden />

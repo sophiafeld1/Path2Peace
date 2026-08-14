@@ -118,6 +118,7 @@ export const therapists: Therapist[] = [
       "Anita integrates Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), somatic approaches, mindfulness, relational work, and nervous system–focused practices, alongside yoga and meditation. Her additional experience includes work in the education sector, volunteering with Crisis Text Line, chair yoga instruction for seniors, oncology yoga, and mindfulness-based practices.",
     ],
     credentials: [
+      "Faculty member, George Washington University School of Medicine and Health Sciences",
       "Master’s degree in Clinical Mental Health Counseling",
       "Bachelor’s degree in Psychology",
       "Advanced certificate in Yoga and Meditation (specialization in Cancer Yoga and Yoga Nidra)",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import ContactInfo from "@/components/ui/ContactInfo";
+import { HERO_MOUNTAIN_IMAGE, HERO_MOUNTAIN_POSITION } from "@/lib/constants";
 import { therapists } from "@/data/therapists";
 
 interface Props {
@@ -31,15 +32,13 @@ export default async function TherapistPage({ params }: Props) {
   return (
     <>
       {/* Hero with mountains background and therapist headshot */}
-      <section className="relative overflow-hidden">
-        <Image
-          src="/images/hero/hero-nature.jpg"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
+      <section
+        className="relative overflow-hidden bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url('${HERO_MOUNTAIN_IMAGE}')`,
+          backgroundPosition: HERO_MOUNTAIN_POSITION,
+        }}
+      >
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="mx-auto flex max-w-4xl flex-col items-center gap-10 md:grid md:max-w-3xl md:translate-x-6 md:grid-cols-[16rem_minmax(0,1fr)] md:items-start md:gap-x-14 lg:max-w-4xl lg:translate-x-10 lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-x-20">
             {/* Fixed grid column keeps every therapist photo in the same spot. */}

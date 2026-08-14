@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Button from "./Button";
+import { HERO_MOUNTAIN_POSITION } from "@/lib/constants";
 
 interface HeroSectionProps {
   title: string;
@@ -28,20 +28,18 @@ export default function HeroSection({
   const subtitleColor = hasImage ? "text-body" : "text-gray-200";
 
   return (
-    <section className="relative overflow-hidden">
-      {hasImage && (
-        <Image
-          src={backgroundImage}
-          alt=""
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-      )}
-      {!hasImage && (
-        <div className="absolute inset-0 bg-ink" />
-      )}
+    <section
+      className={`relative overflow-hidden ${hasImage ? "bg-cover bg-no-repeat" : ""}`}
+      style={
+        hasImage
+          ? {
+              backgroundImage: `url('${backgroundImage}')`,
+              backgroundPosition: HERO_MOUNTAIN_POSITION,
+            }
+          : undefined
+      }
+    >
+      {!hasImage && <div className="absolute inset-0 bg-ink" />}
       <div
         className={`relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 ${
           centered ? "text-center" : ""

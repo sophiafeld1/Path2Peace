@@ -52,6 +52,10 @@ export const NAV_LINKS = [
   { label: "Contact Us", href: "/contact" },
 ] as const;
 
+/** Shared mountain hero image crop — centers the peak line in banner strips. */
+export const HERO_MOUNTAIN_IMAGE = "/images/hero/hero-nature.jpg";
+export const HERO_MOUNTAIN_POSITION = "50% 68%";
+
 /** Desktop banner nav — two rows matching legacy site layout */
 export const BANNER_NAV_ROW_1 = [
   { label: "Services Offered", href: "/services-offered" },
