@@ -73,6 +73,16 @@ export default function OurApproachPage() {
           </p>
 
           <p>
+            Mindfulness practices further enhance our therapeutic approach by
+            grounding clients in the present moment. Through techniques such as
+            breath awareness and body scans, clients learn to observe their
+            thoughts and feelings without attachment, fostering a sense of safety
+            and calm. This awareness not only alleviates anxiety but also creates
+            space for self-discovery and acceptance, empowering clients to
+            embrace their journey toward healing.
+          </p>
+
+          <p>
             Together, these modalities create a comprehensive framework for
             healing trauma. Clients leave our practice not only with a deeper
             understanding of their inner selves but also with practical tools to
@@ -93,16 +103,6 @@ export default function OurApproachPage() {
           </p>
 
           <p>We look forward to hearing from you.</p>
-
-          <p>
-            Mindfulness practices further enhance our therapeutic approach by
-            grounding clients in the present moment. Through techniques such as
-            breath awareness and body scans, clients learn to observe their
-            thoughts and feelings without attachment, fostering a sense of safety
-            and calm. This awareness not only alleviates anxiety but also creates
-            space for self-discovery and acceptance, empowering clients to
-            embrace their journey toward healing.
-          </p>
         </div>
       </section>
 

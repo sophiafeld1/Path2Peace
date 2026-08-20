@@ -35,7 +35,7 @@ export default function FeesAndPhotosPage() {
             <p className="text-body leading-relaxed">
               Our counseling services are self-pay or out-of-network. We do not
               participate with insurance companies. As licensed social workers
-              (LCSW/LMSW), sessions may qualify for insurance reimbursement. As an
+              (LCSW/LMSW) and residents in counseling, sessions may qualify for insurance reimbursement. As an
               out-of-network provider, full payment is made to Path to Peace
               Psychotherapy at the time of service. A monthly statement (superbill)
               will be provided should you wish to submit for reimbursement.

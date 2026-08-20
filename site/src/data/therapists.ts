@@ -80,7 +80,7 @@ export const therapists: Therapist[] = [
       "Licensed Social Worker helping adults navigate life\u2019s transitions and challenges, including anxiety, depression, self-esteem issues, relationship concerns, and complex trauma.",
     fullBio: [
       "Robert (Bobby) Alexander is a Licensed Social Worker based in Reston, Virginia, serving clients in-person and via telehealth in Maryland, DC, and Virginia.",
-      "He serves adults 18+ and addresses anxiety, depression, trauma, substance use, relationship concerns, self-esteem, and career or life transitions. His practice is inclusive of LGBTQ+ clients, specifically supporting gay, lesbian, bisexual, and questioning individuals. His prior work in digital advertising, marketing, and entrepreneurship informs his understanding of career pressures and life transitions.",
+      "He serves adults 18+ and addresses anxiety, depression, trauma, substance use, relationship concerns, self-esteem, and career or life transitions. His practice includes supporting adults from a wide range of backgrounds, including gay, lesbian, bisexual and questioning. His prior work in digital advertising, marketing, and entrepreneurship informs his understanding of career pressures and life transitions.",
       "His therapeutic approach is trauma-informed and supportive, integrating Internal Family Systems, EMDR, and somatic work. He incorporates breathing exercises to develop self-regulation skills and body awareness.",
     ],
     credentials: [
