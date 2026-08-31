@@ -1,6 +1,6 @@
 export const BUSINESS = {
   name: "Path to Peace Psychotherapy",
-  address: "11733 Bowman Green Drive, Suite 200, Reston, Virginia 20190",
+  address: "11737 Bowman Green Drive, Suite 200, Reston, Virginia 20190",
   phone: "703-340-6920",
   phoneHref: "tel:+17033406920",
   email: "info@pathtopeacepsychotherapy.com",

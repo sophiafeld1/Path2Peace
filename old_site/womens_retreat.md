@@ -17,4 +17,4 @@ Specific dates, pricing, detailed activities, and registration instructions requ
 
 ## Contact
 Phone: 703-340-6920
-Address: 11733 Bowman Green Drive, Suite 200, Reston, Virginia 20190
+Address: 11737 Bowman Green Drive, Suite 200, Reston, Virginia 20190

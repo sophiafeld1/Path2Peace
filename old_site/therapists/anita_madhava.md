@@ -34,5 +34,5 @@ Northern Virginia native and mother of three. Interests include art galleries, w
 Practices under supervision of Candice Arnold, LPC, LSATP.
 
 ## Contact
-Path to Peace Psychotherapy, 11733 Bowman Green Drive, Suite 200, Reston, Virginia 20190
+Path to Peace Psychotherapy, 11737 Bowman Green Drive, Suite 200, Reston, Virginia 20190
 Phone: 703-340-6920

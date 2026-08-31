@@ -15,6 +15,6 @@ Uses "guided bilateral stimulation" to help clients reprocess traumatic memories
 "Grounding clients in the present moment" through techniques like breath work and body awareness helps reduce anxiety and create space for personal discovery.
 
 ## Contact
-Address: 11733 Bowman Green Drive, Suite 200, Reston, Virginia 20190
+Address: 11737 Bowman Green Drive, Suite 200, Reston, Virginia 20190
 Phone: 703-340-6920
 Free 15-minute phone consultation offered
