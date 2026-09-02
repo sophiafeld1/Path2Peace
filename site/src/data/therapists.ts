@@ -96,7 +96,6 @@ export const therapists: Therapist[] = [
       "EMDR Therapy",
       "Somatic work",
       "Career & life transitions",
-      "LGBTQ+ affirming care",
       "Substance use recovery",
     ],
     personalBackground:
